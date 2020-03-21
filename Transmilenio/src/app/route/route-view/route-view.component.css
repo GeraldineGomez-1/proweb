@@ -1,0 +1,78 @@
+.tablaGen {
+    margin: auto;
+    margin-bottom: 15px;
+    width: 99% !important;
+    clear: both;
+}
+
+.tablaGen caption {
+    background: #F5F5F5;
+    font-size: 13px;
+    margin: auto;
+}
+
+.tablaGen th {
+    background-color: #024266 !important;
+    border-bottom: 1px dotted #fff;
+    font-size: 12px;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.tablaGen td {
+    background: #F7F7F7;
+    font-size: 0.83em;
+    border-right: 1px dotted #C1C1C1;
+    padding: 5px 3px;
+    border-bottom: 1px dotted #C1C1C1;
+    text-align: left;
+}
+
+.tablaGen td a {
+    color: #024266;
+}
+
+.tablaGen tr.cssRegistro td {
+    background: #EEEEEE;
+}
+
+.table {
+    margin: auto;
+    margin-bottom: 15px;
+    width: 99% !important;
+    clear: both;
+}
+
+table caption {
+    background: #F5F5F5;
+    font-size: 13px;
+    margin: auto;
+}
+
+table th {
+    background-color: #2B2B2A !important;
+    border-bottom: 1px dotted #fff;
+    font-size: 12px;
+    color: #fff;
+    font-weight: lighter;
+}
+
+table td {
+    background: #F7F7F7;
+    font-size: 1em;
+    border-right: 1px solid #fff;
+    padding: 2px 3px;
+    border-bottom: 1px solid #FFFFFF;
+    text-align: left;
+}
+
+a {
+    color: #262626;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
