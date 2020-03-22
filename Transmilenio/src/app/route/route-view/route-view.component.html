@@ -1,53 +1,7 @@
-  <style>
-    :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .spacer {
-    flex: 1;
-  }
-
-  .toolbar {
-    height: 60px;
-    margin: -8px;
-    display: flex;
-    align-items: center;
-    background-color: #C0392B ;
-    color: white;
-    font-weight: 700;
-  }
-
-  .tableContainer {
-    height: 120px;
-    margin: -8px;
-    display: flex;
- 
-  }
-</style>
-
 <div class="container">
     
     <a [routerLink]="['/route/view']"></a>
-    <div class='nxBlockDynamicLayout7' ></div>
-  
+     
     <div class="toolbar" role="banner">
         <img
           width="55"
@@ -57,22 +11,81 @@
         <span>Transmilenio</span>
       </div>
       
-    <div class = "tableContainer" >
-      <table class = "table">
+      <div class="titleRoutes">
+           RUTAS
+      </div>
+  
+  <div class="routes">   
+        
+       <nav>
+          <ul class="menu">
+            <li class="opM"><a class="refM" href="inicio.html">Crear</a></li>
+            <li class="opM"><a class="refM" href="informacion_personal.html">Modificar</a></li>
+            <li class="opM"><a class="refM" href="perfil_profesional.html">Borrar</a></li>
+            <li class="opM"><a class="refM" href="perfil_profesional.html">Estaciones Adyacentes </a></li>
+          </ul>
+       </nav>
 
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>94</td>
-        </tr>
-      </table>
-    </div>
+        <div class="dModRutas">
+          <div class="form-group">
+              <label for="valueRuta" style="margin: 20px 111px 10px !important;width: 100%;">Nombre de ruta</label>
+              <p class="ignoreAaa" style="margin: 0px 15px 10px !important;">Ejemplo: 18-13 o Lomitas y Capilla</p>
+              <input class="form-control" type="text" maxlength="250" name="valueRuta" id="valueRuta" title="Ingresar el número o nombre de la ruta. Ejemplo: 18-13 o Lomitas y Capilla" required="" aria-required="true">
+          </div>
+          
+          <div class="form-group">
+              <input id="searchBtn" class="btn" type="submit" value="Buscar"><br>
+          </div>
+        </div>
 
- 
+        <div class="row"> 
+            <div class="col-sm-12">
+                <table id="tblRutasTroncales" class="tablaGen table table-striped table-condensed table-hover tablaGenPagine tblGenRutas dataTable no-footer" role="grid" aria-describedby="tblRutasTroncales_-" style="width: 0px;">
+            
+                    <thead>
+                        <tr role="row">
+                            <td class="sorting_disabled" rowspan="1" colspan="1" style="width: 0px;"></td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr role="row" class="odd">
+                        <td> 
+                              <div class="containerCodigo" style="border-left: none;">
+                                <div data-ss="tr" class="codigoRuta rutaFacil" style="border-bottom: 10px solid ;">1
+                                </div>
+                              </div>
+                              <div class="containerInfoListRuta">
+                                    <a title="Héroes - Portal del Sur" target="_blank" class="rutaNombre " >
+                                    Héroes - Portal del Sur                    
+                                    </a>
+                                    <br>
+                                    <p title="Lunes a Viernes 04:00 AM - 11:00 PM" class="label label-horario">L-V            | 04:00 AM            - 11:00 PM</p>&nbsp;<p title="Sábado 04:30 AM - 11:00 PM" class="label label-horario">S            | 04:30 AM            - 11:00 PM</p>&nbsp;<p title="Domingo y Festivo 05:00 AM - 10:00 PM" class="label label-horario">D-F            | 05:00 AM            - 10:00 PM</p>&nbsp;                
+                              </div>
+                        </td>
+                      </tr>
+                      
+                      <tr role="row" class="even">
+                        <td> <div class="containerCodigo" style="border-left: none;">
+                                  <div data-ss="tr" class="codigoRuta rutaFacil" style="border-bottom: 10px solid ;">5
+                                  </div>
+                            </div>
+                            <div class="containerInfoListRuta">
+                                    <a title=" Portal Américas - Calle 22" target="_blank" class="rutaNombre ">
+                                      Portal Américas - Calle 22                    </a><br>
+                                    <p title="Lunes a Viernes 04:30 AM - 11:00 PM" class="label label-horario">L-V            | 04:30 AM            - 11:00 PM</p>&nbsp;<p title="Sábado 05:00 AM - 11:00 PM" class="label label-horario">S            | 05:00 AM            - 11:00 PM</p>&nbsp;<p title="Domingo y Festivo 05:30 AM - 10:00 PM" class="label label-horario">D-F            | 05:30 AM            - 10:00 PM</p>&nbsp;                
+                            </div>
+
+                        </td>
+                      </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>    
+  </div>  
+
 
 </div>
